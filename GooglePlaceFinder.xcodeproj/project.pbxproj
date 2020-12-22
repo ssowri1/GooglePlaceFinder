@@ -1,0 +1,551 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		004CB2C12592359700079665 /* HistoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004CB2C02592359700079665 /* HistoryTableViewController.swift */; };
+		004CB2CA2592363600079665 /* HistoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004CB2C92592363600079665 /* HistoryViewModel.swift */; };
+		004CB2D0259249CE00079665 /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004CB2CE259249CE00079665 /* HistoryTableViewCell.swift */; };
+		004CB2D1259249CE00079665 /* HistoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 004CB2CF259249CE00079665 /* HistoryTableViewCell.xib */; };
+		004CB2D425924BD400079665 /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004CB2D325924BD400079665 /* UITableView.swift */; };
+		004CB2D625924D2200079665 /* UITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004CB2D525924D2200079665 /* UITableViewCell.swift */; };
+		004CB2D8259250FC00079665 /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004CB2D7259250FC00079665 /* MapViewModel.swift */; };
+		004CB2DA2592519100079665 /* NSObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004CB2D92592519100079665 /* NSObject.swift */; };
+		004CB2DE2592645F00079665 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004CB2DD2592645F00079665 /* AppConstants.swift */; };
+		00DBB7342590AFD500FC309F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DBB7332590AFD500FC309F /* AppDelegate.swift */; };
+		00DBB7362590AFD500FC309F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DBB7352590AFD500FC309F /* SceneDelegate.swift */; };
+		00DBB7382590AFD500FC309F /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DBB7372590AFD500FC309F /* MapViewController.swift */; };
+		00DBB73B2590AFD500FC309F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00DBB7392590AFD500FC309F /* Main.storyboard */; };
+		00DBB73D2590AFDA00FC309F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00DBB73C2590AFDA00FC309F /* Assets.xcassets */; };
+		00DBB7402590AFDA00FC309F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00DBB73E2590AFDA00FC309F /* LaunchScreen.storyboard */; };
+		00DBB7482590EF7300FC309F /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DBB7472590EF7300FC309F /* LocationService.swift */; };
+		00DBB74A2590F01D00FC309F /* GoogleMapService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DBB7492590F01D00FC309F /* GoogleMapService.swift */; };
+		00DBB74C2591139700FC309F /* DataBaseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DBB74B2591139700FC309F /* DataBaseHandler.swift */; };
+		00DBB74E2591178100FC309F /* DataBaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DBB74D2591178100FC309F /* DataBaseModel.swift */; };
+		708F204A196F1EAC309EFD67 /* Pods_GooglePlaceFinder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 032ADA9F335AD22B5D7E814E /* Pods_GooglePlaceFinder.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		004CB2C02592359700079665 /* HistoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewController.swift; sourceTree = "<group>"; };
+		004CB2C92592363600079665 /* HistoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewModel.swift; sourceTree = "<group>"; };
+		004CB2CE259249CE00079665 /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
+		004CB2CF259249CE00079665 /* HistoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoryTableViewCell.xib; sourceTree = "<group>"; };
+		004CB2D325924BD400079665 /* UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
+		004CB2D525924D2200079665 /* UITableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewCell.swift; sourceTree = "<group>"; };
+		004CB2D7259250FC00079665 /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
+		004CB2D92592519100079665 /* NSObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSObject.swift; sourceTree = "<group>"; };
+		004CB2DD2592645F00079665 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		00DBB7302590AFD500FC309F /* GooglePlaceFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GooglePlaceFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		00DBB7332590AFD500FC309F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		00DBB7352590AFD500FC309F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		00DBB7372590AFD500FC309F /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		00DBB73A2590AFD500FC309F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		00DBB73C2590AFDA00FC309F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		00DBB73F2590AFDA00FC309F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		00DBB7412590AFDA00FC309F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00DBB7472590EF7300FC309F /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		00DBB7492590F01D00FC309F /* GoogleMapService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleMapService.swift; sourceTree = "<group>"; };
+		00DBB74B2591139700FC309F /* DataBaseHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBaseHandler.swift; sourceTree = "<group>"; };
+		00DBB74D2591178100FC309F /* DataBaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBaseModel.swift; sourceTree = "<group>"; };
+		032ADA9F335AD22B5D7E814E /* Pods_GooglePlaceFinder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GooglePlaceFinder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		67278BFC99803D645D1E4268 /* Pods-GooglePlaceFinder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GooglePlaceFinder.release.xcconfig"; path = "Target Support Files/Pods-GooglePlaceFinder/Pods-GooglePlaceFinder.release.xcconfig"; sourceTree = "<group>"; };
+		699E030AE563AB1E5A15E155 /* Pods-GooglePlaceFinder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GooglePlaceFinder.debug.xcconfig"; path = "Target Support Files/Pods-GooglePlaceFinder/Pods-GooglePlaceFinder.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		00DBB72D2590AFD500FC309F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				708F204A196F1EAC309EFD67 /* Pods_GooglePlaceFinder.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		004CB2C2259235CC00079665 /* MapViewController */ = {
+			isa = PBXGroup;
+			children = (
+				004CB2C3259235E500079665 /* ViewController */,
+				004CB2DC2592644000079665 /* ViewModel */,
+			);
+			path = MapViewController;
+			sourceTree = "<group>";
+		};
+		004CB2C3259235E500079665 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				00DBB7372590AFD500FC309F /* MapViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		004CB2C4259235F800079665 /* History */ = {
+			isa = PBXGroup;
+			children = (
+				004CB2CB25923EDE00079665 /* TableViewCell */,
+				004CB2C82592362700079665 /* ViewModel */,
+				004CB2C5259235FF00079665 /* ViewController */,
+			);
+			path = History;
+			sourceTree = "<group>";
+		};
+		004CB2C5259235FF00079665 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				004CB2C02592359700079665 /* HistoryTableViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		004CB2C62592360900079665 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				00DBB73E2590AFDA00FC309F /* LaunchScreen.storyboard */,
+				00DBB7392590AFD500FC309F /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		004CB2C72592361A00079665 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				00DBB7472590EF7300FC309F /* LocationService.swift */,
+				00DBB7492590F01D00FC309F /* GoogleMapService.swift */,
+				00DBB74B2591139700FC309F /* DataBaseHandler.swift */,
+				00DBB74D2591178100FC309F /* DataBaseModel.swift */,
+				004CB2D325924BD400079665 /* UITableView.swift */,
+				004CB2D525924D2200079665 /* UITableViewCell.swift */,
+				004CB2D92592519100079665 /* NSObject.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		004CB2C82592362700079665 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				004CB2C92592363600079665 /* HistoryViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		004CB2CB25923EDE00079665 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				004CB2CE259249CE00079665 /* HistoryTableViewCell.swift */,
+				004CB2CF259249CE00079665 /* HistoryTableViewCell.xib */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		004CB2DB2592614900079665 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				004CB2DD2592645F00079665 /* AppConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		004CB2DC2592644000079665 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				004CB2D7259250FC00079665 /* MapViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		004CB2DF25926DBB00079665 /* ApplicationDelegates */ = {
+			isa = PBXGroup;
+			children = (
+				00DBB7332590AFD500FC309F /* AppDelegate.swift */,
+				00DBB7352590AFD500FC309F /* SceneDelegate.swift */,
+			);
+			path = ApplicationDelegates;
+			sourceTree = "<group>";
+		};
+		00DBB7272590AFD500FC309F = {
+			isa = PBXGroup;
+			children = (
+				00DBB7322590AFD500FC309F /* GooglePlaceFinder */,
+				00DBB7312590AFD500FC309F /* Products */,
+				EE4E0D68E499C787628D1D7E /* Pods */,
+				237AE20F30FB54A0C12911C6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		00DBB7312590AFD500FC309F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				00DBB7302590AFD500FC309F /* GooglePlaceFinder.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		00DBB7322590AFD500FC309F /* GooglePlaceFinder */ = {
+			isa = PBXGroup;
+			children = (
+				004CB2DF25926DBB00079665 /* ApplicationDelegates */,
+				004CB2C2259235CC00079665 /* MapViewController */,
+				004CB2C4259235F800079665 /* History */,
+				004CB2C62592360900079665 /* Storyboard */,
+				00DBB73C2590AFDA00FC309F /* Assets.xcassets */,
+				00DBB7412590AFDA00FC309F /* Info.plist */,
+				004CB2DB2592614900079665 /* Constants */,
+				004CB2C72592361A00079665 /* Helper */,
+			);
+			path = GooglePlaceFinder;
+			sourceTree = "<group>";
+		};
+		237AE20F30FB54A0C12911C6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				032ADA9F335AD22B5D7E814E /* Pods_GooglePlaceFinder.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EE4E0D68E499C787628D1D7E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				699E030AE563AB1E5A15E155 /* Pods-GooglePlaceFinder.debug.xcconfig */,
+				67278BFC99803D645D1E4268 /* Pods-GooglePlaceFinder.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		00DBB72F2590AFD500FC309F /* GooglePlaceFinder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00DBB7442590AFDA00FC309F /* Build configuration list for PBXNativeTarget "GooglePlaceFinder" */;
+			buildPhases = (
+				30BDD854629B4AF0007FAA7B /* [CP] Check Pods Manifest.lock */,
+				00DBB72C2590AFD500FC309F /* Sources */,
+				00DBB72D2590AFD500FC309F /* Frameworks */,
+				00DBB72E2590AFD500FC309F /* Resources */,
+				30F3AFB83F856796BABC192B /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GooglePlaceFinder;
+			productName = GooglePlaceFinder;
+			productReference = 00DBB7302590AFD500FC309F /* GooglePlaceFinder.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		00DBB7282590AFD500FC309F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = com.ssowri1;
+				TargetAttributes = {
+					00DBB72F2590AFD500FC309F = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 00DBB72B2590AFD500FC309F /* Build configuration list for PBXProject "GooglePlaceFinder" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 00DBB7272590AFD500FC309F;
+			productRefGroup = 00DBB7312590AFD500FC309F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				00DBB72F2590AFD500FC309F /* GooglePlaceFinder */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		00DBB72E2590AFD500FC309F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00DBB7402590AFDA00FC309F /* LaunchScreen.storyboard in Resources */,
+				00DBB73D2590AFDA00FC309F /* Assets.xcassets in Resources */,
+				004CB2D1259249CE00079665 /* HistoryTableViewCell.xib in Resources */,
+				00DBB73B2590AFD500FC309F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		30BDD854629B4AF0007FAA7B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GooglePlaceFinder-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		30F3AFB83F856796BABC192B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GooglePlaceFinder/Pods-GooglePlaceFinder-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GooglePlaceFinder/Pods-GooglePlaceFinder-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GooglePlaceFinder/Pods-GooglePlaceFinder-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		00DBB72C2590AFD500FC309F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				004CB2C12592359700079665 /* HistoryTableViewController.swift in Sources */,
+				004CB2CA2592363600079665 /* HistoryViewModel.swift in Sources */,
+				00DBB74C2591139700FC309F /* DataBaseHandler.swift in Sources */,
+				004CB2DA2592519100079665 /* NSObject.swift in Sources */,
+				004CB2DE2592645F00079665 /* AppConstants.swift in Sources */,
+				00DBB74E2591178100FC309F /* DataBaseModel.swift in Sources */,
+				004CB2D8259250FC00079665 /* MapViewModel.swift in Sources */,
+				004CB2D0259249CE00079665 /* HistoryTableViewCell.swift in Sources */,
+				00DBB7382590AFD500FC309F /* MapViewController.swift in Sources */,
+				00DBB7342590AFD500FC309F /* AppDelegate.swift in Sources */,
+				00DBB7482590EF7300FC309F /* LocationService.swift in Sources */,
+				00DBB74A2590F01D00FC309F /* GoogleMapService.swift in Sources */,
+				004CB2D625924D2200079665 /* UITableViewCell.swift in Sources */,
+				00DBB7362590AFD500FC309F /* SceneDelegate.swift in Sources */,
+				004CB2D425924BD400079665 /* UITableView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		00DBB7392590AFD500FC309F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00DBB73A2590AFD500FC309F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		00DBB73E2590AFDA00FC309F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00DBB73F2590AFDA00FC309F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		00DBB7422590AFDA00FC309F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		00DBB7432590AFDA00FC309F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		00DBB7452590AFDA00FC309F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 699E030AE563AB1E5A15E155 /* Pods-GooglePlaceFinder.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GooglePlaceFinder/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.plano.planoapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		00DBB7462590AFDA00FC309F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67278BFC99803D645D1E4268 /* Pods-GooglePlaceFinder.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GooglePlaceFinder/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.plano.planoapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		00DBB72B2590AFD500FC309F /* Build configuration list for PBXProject "GooglePlaceFinder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00DBB7422590AFDA00FC309F /* Debug */,
+				00DBB7432590AFDA00FC309F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00DBB7442590AFDA00FC309F /* Build configuration list for PBXNativeTarget "GooglePlaceFinder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00DBB7452590AFDA00FC309F /* Debug */,
+				00DBB7462590AFDA00FC309F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 00DBB7282590AFD500FC309F /* Project object */;
+}
