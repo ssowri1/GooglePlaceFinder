@@ -10,7 +10,7 @@ import Foundation
 
 class AppConstants {
     // Google key
-    static let googleMapsKey = ""
+    static let googleMapsKey = "AIzaSyDkOoqF4bcmg0z36pHOyFD2liIsPaZjMnk"
     // Map View Controller
     static let youAreHere = "You are here"
     static let locationDistance = 5
